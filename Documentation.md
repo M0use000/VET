@@ -1,4 +1,5 @@
 # Документация по проекту
+## Backend
 ## Приложение Main
 ### <a href="webclin/main/urls.py" target="_blank"> urls.py </a>
 Содержит все url проекта:
@@ -23,6 +24,8 @@
  - Работники Москвы
  - Запись на приём к конкретному доктору(3 класса)
  - Изображения
+## Frontend
+## HTML
 ### <a href="webclin/main/admin.py" target="_blank"> admin.py </a>
 Регистрация готовых баз данных для работы с ними от лица админа.
 ### <a href="webclin/main/templates/main/kazan.html" target="_blank"> kazan.html </a>
@@ -33,6 +36,7 @@
 Данный html файл содержит страницу для записи к ветеринару для Казани.
 ### <a href="webclin/main/templates/main/zapismsc.html" target="_blank"> zapismsc.html </a>
 Данный html файл содержит страницу для записи к ветеринару для Москвы.
+## CSS
 ### <a href="webclin/main/static/main/css/appointment.css" target="_blank"> appointment.css </a>
 Данный css файл содержит стили для формы записи к ветеринару и для карточек врачей. Используется только на страницах для записик к ветеринару.
 ### <a href="webclin/main/static/main/css/main.css" target="_blank"> main.css </a>
