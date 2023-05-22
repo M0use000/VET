@@ -1,0 +1,224 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ветеринарная клиника</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/contacts.css' %}">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">VET</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="moscow">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="appointmentMOSCOW">Запись на приём</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Акции</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Город
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="kazan">Казань</a></li>
+                    <li><a class="dropdown-item" href="moscow">Москва</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container text-center my-5">
+
+    <h1>Ветеринарная клиника "VET"</h1>
+     {% for rabs in rabs %}
+    <img src={{rabs.image}} width="400px" style="border-radius: 50%;">
+        {% endfor %}
+    <h2 class="fw-light">О нас</h2>
+    <p class="lead text-muted">Ветеринарная клиника «Три кота» оказывает ветеринарную помощь домашним питомцам, а именно профилактическую (вакцинации, дегельминтизации), терапевтическую, хирургическую (от кастраций и стерилизаций до сложных хирургических вмешательств). И не только кошкам и собакам, но также и хомякам, крысам, шиншиллам, морским свинкам, кроликам, змеям, попугаям, канарейкам и диким птицам. В нашей ветклинике на современном уровне проводится УЗИ-диагностика, общеклинические, биохимические анализы, цитологические исследования. Также для оказания более качественной услуги по лечению животного вы можете оставить своего питомца в клинике на стационар.</p>
+        </div>
+
+
+
+      <h2 class="Aids text-center">СПИСОК ИСПОЛЬЗУЕМЫХ ПРЕПАРАТОВ</h2>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col">
+            <h3>Синулокс</h3>
+                            <h3>Отидез</h3>
+                            <h3>Отибиовин</h3>
+                            <h3>Шампунь с хлоргексидином</h3>
+                            <h3>Онсиор</h3>
+                            <h3>АСД</h3>
+                            <h3>Ветом</h3>
+                            <h3>Фиприст</h3>
+                            <h3>Бравекто</h3>
+                            <h3>Стронгхолд </h3>
+                            <h3>Блохнет</h3>
+
+          </div>
+          <div class="col">
+            <h3>Блохнет</h3>
+                            <h3>Барс глазные капли</h3>
+                            <h3>Барс ушные капли</h3>
+                            <h3>Барс инсектоакарицидные капли </h3>
+                            <h3>Барс спрей инсектоакарицидный</h3>
+                            <h3>Витамины 8in 1</h3>
+                            <h3>Гликопин </h3>
+                            <h3>Цефален</h3>
+                            <h3>Стоп цистит </h3>
+                            <h3>Гепатовет </h3>
+                            <h3>Энроксил </h3>
+          </div>
+          <div class="col">
+            <h3>Байтрил</h3>
+                            <h3>Римадил </h3>
+                            <h3>Стоп кокцид </h3>
+                            <h3>Целоформ </h3>
+                            <h3>Раносан </h3>
+                            <h3>Левомеколь</h3>
+                            <h3>Крем Зорька</h3>
+                            <h3>Попона для кошек </h3>
+                            <h3>Попона для собак</h3>
+                            <h3>Елизаветинский воротник</h3>
+          </div>
+          <div class="col">
+            <h3>Котбаюн</h3>
+                            <h3>Уристоп </h3>
+                            <h3>Котэрвин </h3>
+                            <h3>Стопстресс </h3>
+                            <h3>Ветспокоин</h3>
+                            <h3>Милпразон </h3>
+                            <h3>Мильбемакс</h3>
+                            <h3>Квантум</h3>
+          </div>
+        </div>
+      </div>
+      <h2 class="Disease text-center">Заболевания</h2>
+      <div class="container"style="padding-top: 40px; padding-bottom: 40px;">
+        <div class="row my-5">
+          <div class="col">
+            <ul>
+              <li><h3>Кастрация котов</h3></li>
+              <li><h3>Диагностика и лечение дирофилляриоза</h3></li>
+              <li><h3>Пироплазмоз (бабезиоз) у собак</h3></li>
+              <li><h3>Неврология кошек</h3></li>
+              <li><h3>Неврология собак</h3></li>
+              <li><h3>Хроническая рвота у собак и кошек</h3></li>
+              <li><h3>Лечение блошиного дерматита</h3></li>
+              <li><h3>Лечение идиопатического цистита кошек</h3></li>
+              <li><h3>Лечение лейкоза кошек</h3></li>
+              <li><h3>Лечение аллергии у кошек</h3></li>
+            </ul>
+         </div>
+         <div class="col">
+          <ul>
+            <li><h3>Лечение аллергии у кошек</h3></li>
+            <li><h3>Анализы животным</h3></li>
+            <li><h3>Лечение грызунов</h3></li>
+            <li><h3>Лечение рептилий</h3></li>
+            <li><h3>Лечение амфибий</h3></li>
+            <li><h3>Уретростомия котов</h3></li>
+            <li><h3>Дегельментизация кошек</h3></li>
+            <li><h3>Лечение питомникового кашля</h3></li>
+            <li><h3>Кастрация кобелей</h3></li>
+            <li><h3>Анализы животным</h3></li>
+          </ul>
+         </div>
+         <div class="col">
+          <ul>
+            <li><h3>Стерилизация собак</h3></li>
+            <li><h3>Мягкие лапки</h3></li>
+            <li><h3>Эвтаназия</h3></li>
+            <li><h3>Вакцинация домашних животных (собак и кошек)</h3></li>
+            <li><h3>Стрижка и груминг кошек</h3></li>
+            <li><h3>Чипирование собак и кошек</h3></li>
+            <li><h3>Хирургическое лечение животных</h3></li>
+            <li><h3>Экспресс-диагностика IDEXX</h3></li>
+            <li><h3>Лечение обыкновенного удава</h3></li>
+            <li><h3>Лечение обыкновенного ужа</h3></li>
+          </ul>
+         </div>
+        </div>
+     </div>
+     <h2 class="Prepare text-center">Как подготовить питомца к приёму?</h2>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col">
+           <img src="https://zoocity-vet.ru/templates/yootheme/cache/59/vet3067-59ef7d2c.webp" width="624" height="416" style="border-radius: 50%;">
+          </div>
+          <div class="col">
+            <ul>
+              <li><h3>1 - В день визита к ветеринару не кормите животное.</h3></li>
+              <li><h3>2 - Обязательно возьмите поводок и намордник.</h3></li>
+              <li><h3>3 - Возьмите свой паспорт для составления договора. При вакцинации требуется паспорт питомца – мы выдадим в клинике, если у вашего питомца его еще нет.</h3></li>
+              <li><h3>4 - Составьте список вопросов к врачу.</h3></li>
+              <li><h3>5 - Возьмите любимое лакомство для питомца. Наши врачи с вашего разрешения смогут похвалить питомца за терпение натуральными лакомствами, которые есть в клинике.</h3></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <div class="contacts">
+        <div class="container-fluid text-center">
+            <h1>Наши Контакты</h1>
+        </div>
+    <div class="container">
+        <div class="row">
+          <div class="col"><div class="detail my-5">
+            <h3 id="НашАдрес">Наш адрес</h3>
+            <p>Г.Москва</p>
+        </div>
+        <div class="detail my-5">
+            <h3 id="Телефон">Телефон</h3>
+            <p>+7 (800) 555-35-35</p>
+        </div>
+        <div class="detail my-5">
+            <h3 id="ВремяРаботы">Время работы</h3>
+            <p>с 9:00 до 20:00 без выходных</p>
+        </div>
+        <div class="detail my-5">
+            <h3 id="Почта">Почта</h3>
+            <p>VETMoscow@mail.ru</p>
+        </div></div>
+          <div class="col my-5">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUce8DB3C" width="100%" height="350" frameborder="1" allowfullscreen="true"></iframe>
+          </div>
+          <div class="col my-5">
+            <h3 id="Соц">Наши соц. сети</h3>
+            <ul>
+                <li>
+                    <a id="Инст" href="https://www.instagram.com/"target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a id="ВК" href="https://www.vk.com/"target="_blank">VK</a>
+                </li>
+                <li>
+                    <a id="ЮТ" href="https://www.youtube.com/"target="_blank">Youtube</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

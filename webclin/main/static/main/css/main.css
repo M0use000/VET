@@ -1,0 +1,33 @@
+body{
+    position: relative;
+  }
+  body::before{
+    content:'';
+    position: fixed;
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    background: url(https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg?w=1380&t=st=1684102505~exp=1684103105~hmac=a9d76f696bbb721ef61379d7f3879c98c409e4c2f186e264d4191f25be98bc07) center / cover no-repeat;
+    filter: blur(5px);
+  }
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #222222;
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+h2 {
+    font-size: 38px;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    margin: 0px 0 25px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
