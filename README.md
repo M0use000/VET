@@ -15,6 +15,8 @@
 - HTML
 - Интерфейсный инструментарий Bootstrap
 - Python Django
+- CSS
+- JavaScript
 
 ## Коммуникация:
 - Discord
