@@ -24,10 +24,10 @@
  - Работники Москвы
  - Запись на приём к конкретному доктору(3 класса)
  - Изображения
-## Frontend
-## HTML
 ### <a href="webclin/main/admin.py" target="_blank"> admin.py </a>
 Регистрация готовых баз данных для работы с ними от лица админа.
+## Frontend
+## HTML
 ### <a href="webclin/main/templates/main/kazan.html" target="_blank"> kazan.html </a>
 Данный html файл содержит главную страницу нашего сайта для Казани.
 ### <a href="webclin/main/templates/main/msc.html" target="_blank"> msc.html </a>
